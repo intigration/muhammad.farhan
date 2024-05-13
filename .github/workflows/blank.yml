@@ -46,6 +46,20 @@ jobs:
         cd dist/quasar.dev
         node ./index.js
 
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        run: |
+          cd dist/quasar.dev
+          npm install
+          node ./index.js
+
 
 
 
