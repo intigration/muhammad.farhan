@@ -48,8 +48,6 @@ jobs:
         # node ./index.js
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
-      with:
-         path: ./app
 
 
   deploy:
