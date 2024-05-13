@@ -45,7 +45,7 @@ jobs:
       run: |
         cd dist/quasar.dev
         npm install
-        node ./index.js
+        # node ./index.js
 
   deploy:
     environment:
