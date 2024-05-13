@@ -46,8 +46,8 @@ jobs:
         cd dist/quasar.dev
         npm install
         # node ./index.js
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+    # - name: Upload artifact
+    #   uses: actions/upload-pages-artifact@v3
 
   # Single deploy job since we're just deploying
   deploy:
