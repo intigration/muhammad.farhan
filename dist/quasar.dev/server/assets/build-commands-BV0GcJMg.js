@@ -1,0 +1,28 @@
+import{mergeProps as y,withCtx as l,createTextVNode as e,unref as i,createVNode as a,useSSRContext as D}from"vue";import{ssrRenderComponent as d}from"vue/server-renderer";import{c as v}from"./page-utils-C-QWsEHe.js";import{D as x,a as $}from"./DocPage-DKr-0pQn.js";import{D as m}from"./DocPrerender-DPOnWPFO.js";import{C as o}from"./CopyButton-l3ndfN49.js";import{_ as L}from"../server-entry.js";import"quasar";import"@quasar/extras/mdi-v6";import"vue-router";import"@quasar/extras/fontawesome-v5";import"@quasar/extras/fontawesome-v6";import"@quasar/extras/mdi-v7";import"quasar/icon-set/svg-mdi-v6.mjs";const f={__name:"build-commands",__ssrInlineRender:!0,setup(k){const b=[{id:"developing",title:"2. Developing"},{id:"building-for-production",title:"3. Building for Production"}];return(g,q,C,w)=>{q(d(x,y({title:"SSR Build Commands",desc:"(@quasar/app-webpack) The Quasar CLI list of commands when developing or building a server-side rendered app.",overline:"Quasar CLI with Webpack - @quasar/app-webpack",heading:"","edit-link":"quasar-cli-webpack/developing-ssr/build-commands",toc:b},w),{default:l((P,n,p,t)=>{if(n)n(`<p${t}>`),n(d($,{to:"/start/quasar-cli"},{default:l((u,s,c,r)=>{if(s)s("Quasar CLI");else return[e("Quasar CLI")]}),_:1},p,t)),n(` makes it incredibly simple to develop or build the final distributables from your source code.</p><h2 id="developing" class="doc-heading doc-h2"${t}>Developing</h2>`),n(d(i(m),null,{default:l((u,s,c,r)=>{if(s)s(`<pre class="doc-code"${r}><code${r}>$ quasar dev <span class="token parameter variable"${r}>-m</span> ssr
+
+<span class="token comment"${r}># ..or the longer form:</span>
+$ quasar dev <span class="token parameter variable"${r}>--mode</span> ssr</code></pre>`),s(d(o,{lang:"bash"},null,c,r));else return[a("pre",{class:"doc-code"},[a("code",null,[e("$ quasar dev "),a("span",{class:"token parameter variable"},"-m"),e(` ssr
+
+`),a("span",{class:"token comment"},"# ..or the longer form:"),e(`
+$ quasar dev `),a("span",{class:"token parameter variable"},"--mode"),e(" ssr")])]),a(o,{lang:"bash"})]}),_:1},p,t)),n(`<h2 id="building-for-production" class="doc-heading doc-h2"${t}>Building for Production</h2>`),n(d(i(m),null,{default:l((u,s,c,r)=>{if(s)s(`<pre class="doc-code"${r}><code${r}>$ quasar build <span class="token parameter variable"${r}>-m</span> ssr
+
+<span class="token comment"${r}># ..or the longer form:</span>
+$ quasar build <span class="token parameter variable"${r}>--mode</span> ssr</code></pre>`),s(d(o,{lang:"bash"},null,c,r));else return[a("pre",{class:"doc-code"},[a("code",null,[e("$ quasar build "),a("span",{class:"token parameter variable"},"-m"),e(` ssr
+
+`),a("span",{class:"token comment"},"# ..or the longer form:"),e(`
+$ quasar build `),a("span",{class:"token parameter variable"},"--mode"),e(" ssr")])]),a(o,{lang:"bash"})]}),_:1},p,t)),n(`<p${t}>If you want a production build with debugging enabled:</p>`),n(d(i(m),null,{default:l((u,s,c,r)=>{if(s)s(`<pre class="doc-code"${r}><code${r}>$ quasar build <span class="token parameter variable"${r}>-m</span> ssr <span class="token parameter variable"${r}>-d</span>
+
+<span class="token comment"${r}># ..or the longer form</span>
+$ quasar build <span class="token parameter variable"${r}>-m</span> ssr <span class="token parameter variable"${r}>--debug</span></code></pre>`),s(d(o,{lang:"bash"},null,c,r));else return[a("pre",{class:"doc-code"},[a("code",null,[e("$ quasar build "),a("span",{class:"token parameter variable"},"-m"),e(" ssr "),a("span",{class:"token parameter variable"},"-d"),e(`
+
+`),a("span",{class:"token comment"},"# ..or the longer form"),e(`
+$ quasar build `),a("span",{class:"token parameter variable"},"-m"),e(" ssr "),a("span",{class:"token parameter variable"},"--debug")])]),a(o,{lang:"bash"})]}),_:1},p,t));else return[a("p",null,[a($,{to:"/start/quasar-cli"},{default:l(()=>[e("Quasar CLI")]),_:1}),e(" makes it incredibly simple to develop or build the final distributables from your source code.")]),a("h2",{id:"developing",class:"doc-heading doc-h2",onClick:u=>i(v)("developing")},"Developing",8,["onClick"]),a(i(m),null,{default:l(()=>[a("pre",{class:"doc-code"},[a("code",null,[e("$ quasar dev "),a("span",{class:"token parameter variable"},"-m"),e(` ssr
+
+`),a("span",{class:"token comment"},"# ..or the longer form:"),e(`
+$ quasar dev `),a("span",{class:"token parameter variable"},"--mode"),e(" ssr")])]),a(o,{lang:"bash"})]),_:1}),a("h2",{id:"building-for-production",class:"doc-heading doc-h2",onClick:u=>i(v)("building-for-production")},"Building for Production",8,["onClick"]),a(i(m),null,{default:l(()=>[a("pre",{class:"doc-code"},[a("code",null,[e("$ quasar build "),a("span",{class:"token parameter variable"},"-m"),e(` ssr
+
+`),a("span",{class:"token comment"},"# ..or the longer form:"),e(`
+$ quasar build `),a("span",{class:"token parameter variable"},"--mode"),e(" ssr")])]),a(o,{lang:"bash"})]),_:1}),a("p",null,"If you want a production build with debugging enabled:"),a(i(m),null,{default:l(()=>[a("pre",{class:"doc-code"},[a("code",null,[e("$ quasar build "),a("span",{class:"token parameter variable"},"-m"),e(" ssr "),a("span",{class:"token parameter variable"},"-d"),e(`
+
+`),a("span",{class:"token comment"},"# ..or the longer form"),e(`
+$ quasar build `),a("span",{class:"token parameter variable"},"-m"),e(" ssr "),a("span",{class:"token parameter variable"},"--debug")])]),a(o,{lang:"bash"})]),_:1})]}),_:1},C))}}},h=f.setup;f.setup=(k,b)=>{const g=D();return(g.modules||(g.modules=new Set)).add("src/pages/quasar-cli-webpack/developing-ssr/build-commands.md"),h?h(k,b):void 0};const G=L(f,[["__file","build-commands.md"]]);export{G as default};

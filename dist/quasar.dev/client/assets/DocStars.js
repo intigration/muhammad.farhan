@@ -1,0 +1,1 @@
+import{_ as c}from"./index.js";import{b as o,q as t,F as a,h as s}from"./vendor.js";const e={},r=s("div",{class:"doc-stars doc-stars--sm"},null,-1),n=s("div",{class:"doc-stars doc-stars--md"},null,-1),_=s("div",{class:"doc-stars doc-stars--lg"},null,-1);function d(l,i){return o(),t(a,null,[r,n,_],64)}const u=c(e,[["render",d],["__file","DocStars.vue"]]);export{u as D};

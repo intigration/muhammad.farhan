@@ -1,0 +1,31 @@
+{
+  "name": "genislab.com",
+  "version": "1.0.0",
+  "description": "Official Genislab Website",
+  "author": "Muhammad Farhan <intigration@gmail.com>",
+  "private": true,
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@quasar/extras": "1.16.11",
+    "prismjs": "1.29.0",
+    "quasar": "2.15.2",
+    "register-service-worker": "1.7.2",
+    "vue": "3.4.21",
+    "vue-router": "4.3.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.3",
+    "serialize-javascript": "^6.0.2"
+  },
+  "engines": {
+    "node": "^20 || ^18 || ^16",
+    "npm": ">= 6.14.12",
+    "yarn": ">= 1.17.3"
+  },
+  "quasar": {
+    "ssr": true
+  }
+}

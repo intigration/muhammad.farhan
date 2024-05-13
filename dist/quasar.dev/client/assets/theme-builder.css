@@ -1,0 +1,1 @@
+.theme-picker__bg-dark{background-color:var(--q-dark-page)!important}.theme-picker__content{padding-top:8px}.theme-picker__colors{flex-direction:row}.theme-picker__colors .q-btn{font-size:14px}.theme-picker__tabs .q-tab__label{font-size:16px}@media (min-width: 600px){.theme-picker__colors{flex-direction:column}.theme-picker__content{padding:0 0 0 8px}}

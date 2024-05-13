@@ -1,0 +1,41 @@
+import{c as u}from"./_examples_frameless-electron-window.js";import{D as r}from"./DocPage.js";import{D as c}from"./DocPrerender.js";import{C as p}from"./CopyButton.js";import{_ as k}from"./index.js";import{b as m,d,w as e,h as n,f as o,e as t,i as s}from"./vendor.js";const f=n("p",null,[s("The "),n("code",{class:"doc-token"},"useTimeout()"),s(" composable is similar in scope with the native "),n("code",{class:"doc-token"},"setTimeout()"),s(", with some key differences. Once you trigger a setTimeout(fn, delay) it will get executed after the specified delay no matter what. The useTimeout() on the other hand, can be “cancelled”. You can also override the executing Function before the timeout expires.")],-1),h=n("p",null,"In other words, if you want to schedule a function after a delay but you might want to override it or even cancel it before the delay happens, this is the composable for you.",-1),y=n("p",null,"The useTimeout composable also automatically cancels (if it was registered and still pending) when your component gets destroyed.",-1),T=n("pre",{class:"doc-code"},[n("code",null,[n("span",{class:"token keyword"},"import"),s(),n("span",{class:"token punctuation"},"{"),s(" useTimeout "),n("span",{class:"token punctuation"},"}"),s(),n("span",{class:"token keyword"},"from"),s(),n("span",{class:"token string"},"'quasar'"),s(`
+
+`),n("span",{class:"token function"},"setup"),s(),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},")"),s(),n("span",{class:"token punctuation"},"{"),s(`
+  `),n("span",{class:"token keyword"},"const"),s(),n("span",{class:"token punctuation"},"{"),s(`
+    registerTimeout`),n("span",{class:"token punctuation"},","),s(`
+    removeTimeout
+  `),n("span",{class:"token punctuation"},"}"),s(),n("span",{class:"token operator"},"="),s(),n("span",{class:"token function"},"useTimeout"),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},")"),s(`
+
+  `),n("span",{class:"token comment"},"// ..."),s(`
+`),n("span",{class:"token punctuation"},"}")])],-1),_=n("pre",{class:"doc-code"},[n("code",null,[n("span",{class:"token keyword"},"function"),s(),n("span",{class:"token function"},"useTimeout"),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},")"),n("span",{class:"token operator"},":"),s(),n("span",{class:"token punctuation"},"{"),s(`
+  `),n("span",{class:"token function"},"registerTimeout"),n("span",{class:"token punctuation"},"("),n("span",{class:"token function-variable function"},"fn"),n("span",{class:"token operator"},":"),s(),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},")"),s(),n("span",{class:"token operator"},"=>"),s(),n("span",{class:"token keyword"},"void"),n("span",{class:"token punctuation"},","),s(" delay"),n("span",{class:"token operator"},"?"),n("span",{class:"token operator"},":"),s(" string "),n("span",{class:"token operator"},"|"),s(" number"),n("span",{class:"token punctuation"},")"),n("span",{class:"token operator"},":"),s(),n("span",{class:"token keyword"},"void"),n("span",{class:"token punctuation"},";"),s(`
+  `),n("span",{class:"token function"},"removeTimeout"),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},")"),n("span",{class:"token operator"},":"),s(),n("span",{class:"token keyword"},"void"),n("span",{class:"token punctuation"},";"),s(`
+`),n("span",{class:"token punctuation"},"}"),n("span",{class:"token punctuation"},";")])],-1),g=n("pre",{class:"doc-code"},[n("code",null,[n("span",{class:"token keyword"},"import"),s(),n("span",{class:"token punctuation"},"{"),s(" useTimeout "),n("span",{class:"token punctuation"},"}"),s(),n("span",{class:"token keyword"},"from"),s(),n("span",{class:"token string"},"'quasar'"),s(`
+
+`),n("span",{class:"token function"},"setup"),s(),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},")"),s(),n("span",{class:"token punctuation"},"{"),s(`
+  `),n("span",{class:"token keyword"},"const"),s(),n("span",{class:"token punctuation"},"{"),s(" registerTimeout "),n("span",{class:"token punctuation"},"}"),s(),n("span",{class:"token operator"},"="),s(),n("span",{class:"token function"},"useTimeout"),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},")"),s(`
+
+  `),n("span",{class:"token keyword"},"function"),s(),n("span",{class:"token function"},"onSomeEvent"),s(),n("span",{class:"token punctuation"},"("),n("span",{class:"token parameter"},"param"),n("span",{class:"token punctuation"},")"),s(),n("span",{class:"token punctuation"},"{"),s(`
+    `),n("span",{class:"token function"},"registerTimeout"),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},")"),s(),n("span",{class:"token operator"},"=>"),s(),n("span",{class:"token punctuation"},"{"),s(`
+      console`),n("span",{class:"token punctuation"},"."),n("span",{class:"token function"},"log"),n("span",{class:"token punctuation"},"("),n("span",{class:"token string"},"'param is'"),n("span",{class:"token punctuation"},","),s(" param"),n("span",{class:"token punctuation"},")"),s(`
+    `),n("span",{class:"token punctuation"},"}"),n("span",{class:"token punctuation"},","),s(),n("span",{class:"token number"},"2000"),n("span",{class:"token punctuation"},")"),s(),n("span",{class:"token comment"},"// in 2 seconds"),s(`
+  `),n("span",{class:"token punctuation"},"}"),s(`
+
+  `),n("span",{class:"token comment"},"// ..."),s(`
+
+  `),n("span",{class:"token comment"},"// You can call onSomeEvent() multiple"),s(`
+  `),n("span",{class:"token comment"},"// times in a row and only the last"),s(`
+  `),n("span",{class:"token comment"},"// registered Function will run when it"),s(`
+  `),n("span",{class:"token comment"},"// is time for it"),s(`
+
+  `),n("span",{class:"token comment"},"// Note that the delay is reset each"),s(`
+  `),n("span",{class:"token comment"},"// time you register/override the timeout"),s(`
+`),n("span",{class:"token punctuation"},"}")])],-1),w=n("p",null,"Should you need more than one useTimeout() per component, simply rename the functions of the returned object:",-1),v=n("pre",{class:"doc-code"},[n("code",null,[n("span",{class:"token keyword"},"const"),s(),n("span",{class:"token punctuation"},"{"),s(`
+  `),n("span",{class:"token literal-property property"},"registerTimeout"),n("span",{class:"token operator"},":"),s(" registerFirstTimeout"),n("span",{class:"token punctuation"},","),s(`
+  `),n("span",{class:"token literal-property property"},"removeTimeout"),n("span",{class:"token operator"},":"),s(` removeFirstTimeout
+`),n("span",{class:"token punctuation"},"}"),s(),n("span",{class:"token operator"},"="),s(),n("span",{class:"token function"},"useTimeout"),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},")"),s(`
+
+`),n("span",{class:"token keyword"},"const"),s(),n("span",{class:"token punctuation"},"{"),s(`
+  `),n("span",{class:"token literal-property property"},"registerTimeout"),n("span",{class:"token operator"},":"),s(" registerSecondTimeout"),n("span",{class:"token punctuation"},","),s(`
+  `),n("span",{class:"token literal-property property"},"removeTimeout"),n("span",{class:"token operator"},":"),s(` removeSecondTimeout
+`),n("span",{class:"token punctuation"},"}"),s(),n("span",{class:"token operator"},"="),s(),n("span",{class:"token function"},"useTimeout"),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},")")])],-1),x={__name:"use-timeout",setup(b){const l=[{id:"syntax",title:"2. Syntax"},{id:"example",title:"3. Example"}];return(S,a)=>(m(),d(r,{title:"useTimeout composable",desc:"What is useTimeout() composable and how you can use it",badge:"Quasar v2.15+",heading:"","edit-link":"vue-composables/use-timeout",toc:l},{default:e(()=>[f,h,y,n("h2",{id:"syntax",class:"doc-heading doc-h2",onClick:a[0]||(a[0]=i=>o(u)("syntax"))},"Syntax"),t(o(c),null,{default:e(()=>[T,t(p)]),_:1}),t(o(c),null,{default:e(()=>[_,t(p)]),_:1}),n("h2",{id:"example",class:"doc-heading doc-h2",onClick:a[1]||(a[1]=i=>o(u)("example"))},"Example"),t(o(c),null,{default:e(()=>[g,t(p)]),_:1}),w,t(o(c),null,{default:e(()=>[v,t(p)]),_:1})]),_:1}))}},V=k(x,[["__file","use-timeout.md"]]);export{V as default};

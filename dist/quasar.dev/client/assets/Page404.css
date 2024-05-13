@@ -1,0 +1,1 @@
+.page404{padding:120px 16px}.page404__hero{font-size:150px}.page404__hero img{width:130px;height:130px;animation:err-logo-rotate 80s linear infinite}body.body--light .page404__logo-dark,body.body--dark .page404__logo-light{display:none}@keyframes err-logo-rotate{to{transform:rotate(-360deg)}}
