@@ -46,6 +46,11 @@ jobs:
         cd dist/quasar.dev
         npm install
         # node ./index.js
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+         path: ./app
+
 
   deploy:
     environment:
@@ -57,7 +62,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         run: |
-          cd dist/quasar.dev
+          cd app/dist/quasar.dev
           npm install
           node ./index.js
 
