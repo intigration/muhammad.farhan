@@ -1,0 +1,65 @@
+{
+  "name": "genislab.com",
+  "version": "1.0.0",
+  "description": "Official Genislab Website",
+  "productName": "genislab-website",
+  "author": "Muhammad Farhan <intigration@gmail.com>",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare-docs": "node build/copy-quasar-api.js",
+    "dev": "pnpm prepare-docs && quasar dev",
+    "dev:ssr": "pnpm prepare-docs && quasar dev -m ssr",
+    "build": "pnpm prepare-docs && node build/search.js && quasar build -m ssr && node build/fix-ssr-manifest.js && mkdir -p dist/quasar.dev/client/examples/ && cp -R src/examples/* dist/quasar.dev/client/examples/ && node build/ssg.js",
+    "relnotes": "node build/release-notes/index.js",
+    "lint": "eslint --ext .js,.vue ./ --report-unused-disable-directives --fix",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.6",
+    "prismjs": "^1.26.0",
+    "quasar": "^2.11.5",
+    "register-service-worker": "^1.0.0",
+    "vue": "^3.4.20",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^2.0.0-beta.5",
+    "autoprefixer": "^10.4.17",
+    "axios": "^1.6.7",
+    "eslint": "^8.57.0",
+    "eslint-config-quasar": "^0.0.1",
+    "eslint-plugin-quasar": "^1.1.0",
+    "fast-glob": "^3.2.12",
+    "fs-extra": "^11.2.0",
+    "gray-matter": "^4.0.2",
+    "markdown-ast": "^0.3.0",
+    "markdown-it": "^14.0.0",
+    "markdown-it-container": "^4.0.0",
+    "toml": "^3.0.0",
+    "vite-plugin-checker": "^0.6.4",
+    "workbox-build": "^7.0.0",
+    "workbox-cacheable-response": "^7.0.0",
+    "workbox-core": "^7.0.0",
+    "workbox-expiration": "^7.0.0",
+    "workbox-precaching": "^7.0.0",
+    "workbox-routing": "^7.0.0",
+    "workbox-strategies": "^7.0.0"
+  },
+  "engines": {
+    "node": "^20 || ^18 || ^16",
+    "npm": ">= 6.14.12",
+    "yarn": ">= 1.17.3"
+  },
+  "main": "quasar.config.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/genislab"
+  },
+  "keywords": [
+    "genislab",
+    "ai",
+    "ml"
+  ],
+  "license": "ISC"
+}
