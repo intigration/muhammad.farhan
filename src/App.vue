@@ -8,12 +8,12 @@ import { useMeta } from 'quasar'
 import getMeta from 'assets/get-meta.js'
 
 useMeta({
-  title: 'Genislab Technologies',
-  titleTemplate: title => `${title} | Genislab Technologies`,
+  title: 'Muhammad Farhan',
+  titleTemplate: title => `${title} | Muhammad Farhan`,
 
   meta: getMeta(
-    'Genislab Technologies- Achieve 100% functional coverage assurance bu adopting high-performance Automation strategies from genis team in record time',
-    'context-oriented, end-2-end test automation components for best-in-class high-performance, responsive systems of systems. Productive people choose us..'
+    'Muhammad Farhan- Achieve 100% functional coverage assurance by adopting high-performance Automation strategies in record time',
+    'context-oriented, end-2-end test automation components for best-in-class high-performance, responsive systems of systems....'
   )
 })
 </script>

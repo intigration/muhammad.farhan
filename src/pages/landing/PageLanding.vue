@@ -4,14 +4,14 @@
 
     <div>
       <div class="column items-center intro-section letter-spacing-300">
-        <q-img src="quasar-api/logo.png" width="250px" height="255px" />
+        <q-img src="quasar-api/logo.jpg" width="250px" height="255px" />
 
         <h1 class="letter-spacing-375 landing-my-large text-center text-white text-size-20 primary-line-height">
-          Next genertaion AI lab
+          I am passionate, curious, and innovative about making technology purposeful and sellable
         </h1>
 
         <q-btn
-          label="Are you ready to lift off with Automation?"
+          label="Let's Step into Next generation of Automation?"
           class="call-to-action-btn shadow-bottom-small"
           @click="scrollSectionIntoView.whyQuasar"
         />
@@ -27,7 +27,7 @@
         />
 
         <div class="intro-section__sponsors-heading q-mt-xl text-weight-bold text-brand-primary text-size-16 text-capitalize">
-          Our Platinum Work
+          Platinum Hybrid techniques & continous workflows
         </div>
         <div class="row justify-center full-width">
           <sponsor-tile
@@ -43,14 +43,14 @@
           padding="0 8px"
           text-color="white-54"
           no-caps
-          label="Full sponsor's list"
+          label="Fully Intgerated Modren Tooling Chain"
           class="btn-underline text-size-16 letter-spacing-300"
           @click="scrollSectionIntoView.sponsors"
         />
       </div>
 
       <div class="q-my-xl" id="why-quasar-section">
-        <h2 class="heading heading--large">Why should you choose Genislab?</h2>
+        <h2 class="heading heading--large">Key Automation Features?</h2>
 
         <div class="q-gutter-lg row justify-center">
           <why-quasar-card
@@ -151,32 +151,106 @@ import { socialLinks } from 'src/assets/links.social.js'
 import { sponsors } from 'src/assets/sponsors.js'
 
 useMeta({
-  title: 'Quasar Framework',
+  title: 'NextGen Automation Framework',
   titleTemplate: ''
 })
 
 const whyQuasar = [
   {
     icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
-    title: 'Top Class Components',
-    body: 'A library of more than 70 high performance customizable Material Design web components for all your needs',
-    btnLabel: 'Browse components',
+    title: 'continous quality improvement reporting',
+    body: 'More than 70 Key quality Metrics for all your needs',
+    btnLabel: 'Browse Metrics',
+    btnLink: '/components'
+  },
+  {
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'continous code quality checks',
+    body: 'Sonarqube intgeration for static code analysis',
+    btnLabel: 'Explore Pipelines',
     btnLink: '/components'
   },
   {
     icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/source.svg',
-    title: 'One codebase many integrations',
-    body: 'Keep your favorite technology, we provide all the needed integrations out of the box.',
+    title: 'Resuable Pipeline Components',
+    body: 'Bring down the automation discovery and design efforts, reuse components out of the box.',
     btnLabel: 'Discover Integrations',
     btnLink: '/integrations'
   },
   {
     icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/documentation.svg',
-    title: 'Great documentation',
-    body: 'All the details you deserve to start working properly. Every star-pilot needs a good manual.',
+    title: 'Ready Documentation',
+    body: 'Great documentation with no hassle - Auto-Generate the user manuals- All the details your project deserve to working properly..',
     btnLabel: 'Get Started',
     btnLink: '/start/quick-start'
-  }
+  },
+  {
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'Advance Build analytics and Observbility',
+    body: 'Visibility of health across all the components.',
+    btnLabel: 'Browse Evals',
+    btnLink: '/components'
+  },  {
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'continous quality improvement reporting',
+    body: 'More than 70 Key quality Metrics for all your needs',
+    btnLabel: 'Browse Metrics',
+    btnLink: '/components'
+  },{
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'Self healing and health reporting scripts',
+    body: 'New generation of self-healing scripts to ensure business continouty',
+    btnLabel: 'How Self-healing works?',
+    btnLink: '/components'
+  }, {
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'Ready Templates to support various Deployment Stratgies',
+    body: 'More than 70 Key quality Metrics for all your needs',
+    btnLabel: 'Browse Metrics',
+    btnLink: '/components'
+  },   {
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'Autonomous Sprint Management',
+    body: 'Multiple Workflows to form an autonomous sprint planning, backlog and retrospective management workflow ',
+    btnLabel: 'Browse Metrics',
+    btnLink: '/components'
+  },{
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'Generic Workers & Test Agents',
+    body: 'Genric Workers to perform day-to-day tasks e.g. Scraping, monitoring, email',
+    btnLabel: 'Browse Agents',
+    btnLink: '/components'
+  }, {
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'Change Control Version',
+    body: 'Every source change is being tracked & interlinked',
+    btnLabel: 'Explore Risk Board',
+    btnLink: '/components'
+  },{
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'Intelligent Risk Board',
+    body: 'State of art mechanism for risk identification, supression and mitigation',
+    btnLabel: 'Explore Risk Board',
+    btnLink: '/components'
+  },{
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'Modern Change Management',
+    body: 'Predictive manner to detect and plan the Change',
+    btnLabel: 'Explore Risk Board',
+    btnLink: '/components'
+  },{
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'OSS Clearance Check',
+    body: 'Continous Check for all Open Source Packages status',
+    btnLabel: 'Perform OSS',
+    btnLink: '/components'
+  }, {
+    icon: 'img:https://cdn.quasar.dev/img/custom-svg-icons/components.svg',
+    title: 'Data Transformers and Linter',
+    body: 'Ready to transform your data into your defined schema',
+    btnLabel: 'Browse Metrics',
+    btnLink: '/components'
+  },
 ]
 
 function goToSection (sectionId) {
